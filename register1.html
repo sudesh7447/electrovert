@@ -41,7 +41,24 @@
 
 
 </head>
-
+<style>
+    .navbar-area::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #102baf 0%, #1664ff 100%);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 100;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+      }
+</style>
 <body>
 
     <!--====== PRELOADER PART START ======-->
@@ -62,20 +79,6 @@
             </div>
         </div>
     </div>
-    <style>
-        .carousel-indicator {
-            position: relative;
-            bottom: -50px;
-
-            padding-bottom: 10%
-        }
-
-        @media (max-width: 767px) {
-            .carousel-indicator {
-                display: none;
-            }
-        }
-    </style>
 
     <!--====== PRELOADER PART ENDS ======-->
 
@@ -86,18 +89,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg ">
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/ELESA.svg" style=" filter: invert(1);width:200px" alt="Logo">
                             </a>
-
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"
-                                aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                                
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                             </button>
-
+                            
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
@@ -119,119 +121,31 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div>
-
-        <div id="about" class="header-content-area bg_cover d-flex align-items-center"
-            style="background-image: url(assets/images/fespecial.jpg)">
+        <section id="events" class="features-area pt-115 pb-130 gray-bg">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
-
-
-                        <div class="header-content text-center">
-                            <h2 class="header-title">Amaze</h2>
-                            <h3 class="sub-title"">Beyond The Horizon!</h3>
-                            <h3 class="sub-title"">30 April, 2022 </h3>
-
-                            
-                        </div>
-                       
-                     
-                         <!-- header content -->
-                         <div class=" container" style="padding: 5%;">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators carousel-indicator ">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                        </li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="about-content text-center">
-
-
-                                                <h4 class=" f-title" style="color: white;  ">Amaze event is exclusively designed for first-year students. The event is planned in such a way that participants will get to learn, improve and grow, which will help them in their further journey. 
-                                                </h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item ">
-                                            <div class="about-content">
-
-
-                                                <h4 class=" f-title text-center " style="color: white;  text-align:center">Round 1: <br>
-                                                    Basic aptitude test covering various domains like quantitative, logical, verbal, general knowledge, and puzzles. The test will be carried out in online mode. 
-                                                    
-                                                </h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="about-content">
-
-
-                                                <h4 class=" f-title" style="color: white; text-align:center ">Round 2:<br>
-                                                    This round will be more of soft-skills and checking spontaneity. 
-                                                    
-                                                </h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="about-content">
-
-
-                                                <h4 class=" f-title" style="color: white; text-align:center ">
-                                                    Round 3:  <br>
-                                                    Surprise round Team: <br>
-                                                    Individual Participation<br> <br>	Contact info: <br>
-                                                    Dhanashri Patil : 9370119099 <br>
-                                                    Samruddhi Sutar : 7387979245 <br>
-                                                     
-                                                </h4>
-
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="about-content">
-
-
-                                                <h4 class=" f-title" style="color: white; text-align:center ">Entry Fee: <br>
-                                                    20 Rs per Individual
-                                                </h4>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                        </div>
-                        <ul class="header-btn text-center" style="padding: 3%;">
-                            <li><a class="main-btn main-btn-2 page-scroll" href="register.html">Register Now</a></li>
-
-                        </ul>
-
-
-
+                    <div class="col-lg-8">
+                        <div class="section-title text-center pb-20">
+                            <h2 class="title">Registration will open shortly!</h2>
+                          
+                            <a class="main-btn main-btn-2 page-scroll" href="index.html">Home</a>
+                        </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
+                <!-- row -->
+        
+                </div>
             </div> <!-- container -->
-        </div> <!-- header content -->
+        </section>
+        
     </header>
 
-    <!--====== HEADER PART ENDS ======-->
-
-    <section class="container" style="height: 30px;">
-
-    </section>
-
+   
     <!--====== FOOTER PART START ======-->
 
     <section id="footer" class="footer-area bg_cover" style="background-image: url(assets/images/footer.jpg)">
-
-
+    
+        
         <div class="footer-widget">
             <div class="container">
                 <div class="widget  pt-80 pb-130">
@@ -247,36 +161,34 @@
                         <div class="col-lg-6">
                             <div class="footer-contact mt-40">
                                 <h5 class="f-title">Connect with Us</h5>
-                                <p class="text">Don't miss a thing! Receive daily news You should connect social area
-                                    for Any Proper Updates Anytime</p>
-                                    <ul class="social">
-                                        <li>
-                                          <a
-                                            href="https://www.linkedin.com/company/elesa-wce
-                                          "
-                                            ><i class="lni-linkedin-original"></i
-                                          ></a>
-                                        </li>
-                                        <li>
-                                          <a href="https://www.instagram.com/elesa_wce"
-                                            ><i class="lni-instagram-original"></i
-                                          ></a>
-                                        </li>
-                                      </ul>
+                                <p class="text">Don't miss a thing! Receive daily news You should connect social area for Any Proper Updates Anytime</p>
+                                <ul class="social">
+                                    <li>
+                                      <a
+                                        href="https://www.linkedin.com/company/elesa-wce
+                                      "
+                                        ><i class="lni-linkedin-original"></i
+                                      ></a>
+                                    </li>
+                                    <li>
+                                      <a href="https://www.instagram.com/elesa_wce"
+                                        ><i class="lni-instagram-original"></i
+                                      ></a>
+                                    </li>
+                                  </ul>
                             </div>
                         </div>
                     </div> <!-- row -->
                 </div> <!-- widget -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
-
+        
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p class="text">Website Designed and Developed by Web Team Elesa. All Rights Reserved by Us
-                            </p>
+                            <p class="text">Website Designed and Developed by Web Team Elesa. All Rights Reserved by Us</p>
                         </div> <!-- copyright -->
                     </div>
                 </div> <!-- row -->
@@ -285,16 +197,16 @@
     </section>
 
     <!--====== FOOTER PART ENDS ======-->
-
+    
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
 
-    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== BACK TOP TOP PART ENDS ======--> 
 
     <!--====== PART START ======-->
 
-    <!--
+<!--
     <section class="">
         <div class="container">
             <div class="row">
@@ -356,3 +268,4 @@
 </body>
 
 </html>
+
